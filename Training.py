@@ -29,7 +29,7 @@ plt.figure(figsize=(10, 4))
 for i in range(10):
     plt.subplot(2, 5, i + 1)
     plt.imshow(X_train[i], cmap='gray')
-    plt.title(f"Label: {y_train[i]}")
+    plt.title(f"Label: {np.argmax(y_train[i])}")
     plt.axis('off')
 plt.show()
 
